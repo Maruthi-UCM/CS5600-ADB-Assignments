@@ -3,9 +3,10 @@ from py2neo import Graph, Node, Relationship
 import pandas as pd
 
 
-uri = "neo4j+s://997c5533.databases.neo4j.io"               #"neo4j+s://<Bolt url for Neo4j Aura instance>"
+url = "neo4j+s://49080325.databases.neo4j.io"               #"neo4j+s://<Bolt url for Neo4j Aura instance>"
 user = "neo4j"                                              #"<Username for Neo4j Aura instance>"
-password = "eLNM-k2h9MQuXqYqgHfKNKF8Hgs2fy0X1xsLBZ-SinM"    #"<Password for Neo4j Aura instance>"
+password = "qAjlip_uzWU0dEYEV5f2MZSEkcomhFG_zfajNs4_v6w"    #"<Password for Neo4j Aura instance>"
 
-graph = Graph(uri, auth=(user, password))
-#print(graph.)
+graph = Graph(url, auth=(user, password))
+
+#print(graph.query('match(n) return n limit 10'))
